@@ -1,0 +1,2 @@
+add_executable(benchmark_stub benchmark_stub.cpp)
+target_link_libraries(benchmark_stub PRIVATE project_core)

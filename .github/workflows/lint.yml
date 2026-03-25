@@ -1,0 +1,23 @@
+name: Lint
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+  push:
+    branches: [ main, develop ]
+
+jobs:
+  clang-format-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install clang-format
+        run: sudo apt-get update && sudo apt-get install -y clang-format
+
+      - name: Check formatting
+        run: |
+          files=$(find include src apps tests benchmarks examples -type f \( -name "*.hpp" -o -name "*.cpp" -o -name "*.h" -o -name "*.c" \))
+          if [ -n "$files" ]; then
+            clang-format --dry-run --Werror $files
+          fi
