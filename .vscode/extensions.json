@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "ms-vscode.cpptools",                // Suporte a C/C++
+    "ms-vscode.cmake-tools",             // Integração com CMake
+    "twxs.cmake",                        // Sintaxe para arquivos CMakeLists.txt
+    "ms-vscode.cpptools-extension-pack", // Pacote extra de ferramentas C++
+    "ms-vscode.makefile-tools"           // Suporte a Makefile
+  ],
+  "unwantedRecommendations": [
+    "ms-python.python"                   // Evitar extensões não relacionadas
+  ]
+}
