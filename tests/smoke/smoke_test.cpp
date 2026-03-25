@@ -1,5 +1,5 @@
-#include <gtest/gtest.h>
 #include "project_name/version.hpp"
+#include <gtest/gtest.h>
 
 TEST(SmokeTest, VersionIsNotEmpty)
 {

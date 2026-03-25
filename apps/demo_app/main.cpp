@@ -1,5 +1,5 @@
-#include <iostream>
 #include "project_name/version.hpp"
+#include <iostream>
 
 int main()
 {

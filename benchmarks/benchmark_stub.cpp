@@ -1,6 +1,6 @@
+#include "project_name/version.hpp"
 #include <chrono>
 #include <iostream>
-#include "project_name/version.hpp"
 
 int main()
 {
@@ -10,8 +10,7 @@ int main()
     (void)v;
 
     const auto end = std::chrono::steady_clock::now();
-    const auto elapsed =
-        std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
+    const auto elapsed = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
 
     std::cout << "Elapsed ns: " << elapsed << '\n';
     return 0;
